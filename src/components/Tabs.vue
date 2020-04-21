@@ -1,0 +1,65 @@
+<template>
+  <div class="tabs-wrap">
+    <ul>
+      <li type="name"
+          :class="active === 'name' ? 'active' : ''"
+          @click="changeSortStatus($event)"
+      >за назвою</li>
+      <li type="population"
+          :class="active === 'population' ? 'active' : ''"
+          @click="changeSortStatus($event)"
+      >за населенням</li>
+      <li type="square"
+          :class="active === 'square' ? 'active' : ''"
+          @click="changeSortStatus($event)"
+      >за площею</li>
+    </ul>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "Tabs",
+    methods: {
+      changeSortStatus(e){
+        this.$store.commit('SET_SORTING_TYPE', e.target.type);
+      }
+    },
+    computed:{
+      active(){
+        return this.$store.state.sortBy;
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .tabs-wrap{
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  li{
+    background: white;
+    list-style-type: none;
+    padding: 15px 20px;
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 18px;
+    margin:0 2%;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
+  }
+  .active{
+    background: black;
+    color: white;
+  }
+</style>
