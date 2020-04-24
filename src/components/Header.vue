@@ -1,7 +1,7 @@
 <template>
   <header>
     <div>
-      <h2>Сортування міст України</h2>
+      <h1>Сортування міст України</h1>
       <p>тестове завдання від kover</p>
     </div>
 
@@ -22,7 +22,16 @@
   header{
     width:100%;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    margin: 42px 8px;
+  }
+  h1{
+    font-size: 2.15em;
+    margin-bottom: 10px;
+
+  }
+  p{
+    font-size: 1.25em;
   }
   .img-wrap{
     margin-left: auto;

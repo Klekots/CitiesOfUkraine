@@ -3,8 +3,8 @@
     <div class="main-wrap">
       <Header/>
       <Tabs/>
-      <Spinner v-if="!isLoading"/>
-      <Cities v-else />
+      <Cities v-if="isLoading"/>
+      <Spinner v-else/>
     </div>
   </div>
 </template>
@@ -51,16 +51,24 @@ export default {
     height: 100%;
     margin: 0;
     padding: 0;
+
+  }
+  body{
+    background: url("./assets/images/map.svg") no-repeat center center fixed;
+    background-size: 62%;
+  }
+  h1, p{
+    margin: 0;
+    padding: 0;
   }
 
   .main-wrap{
     display: flex;
-    width: 70%;
+    width: 62%;
     height: 100vh;
     margin: 0 auto;
     flex-direction: column;
-    background: url("./assets/images/map.svg") no-repeat center center fixed;
-    background-size: 70%;
+
   }
 </style>
 

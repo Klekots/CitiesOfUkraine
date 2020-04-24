@@ -36,23 +36,22 @@
 <style scoped>
   .tabs-wrap{
     width:100%;
-    margin: 0 auto;
+    margin: 2px auto 40px;
     display: flex;
-    justify-content: space-around;
   }
   ul{
     display: flex;
-    width: 100%;
+    width: 94%;
     justify-content: center;
   }
   li{
     background: white;
     list-style-type: none;
     padding: 15px 20px;
-    flex-basis: 20%;
+    flex-basis: 190px;
     text-align: center;
     font-size: 18px;
-    margin:0 2%;
+    margin: 0 17px;
     border-radius: 5px;
     color: black;
     cursor: pointer;

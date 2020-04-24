@@ -38,29 +38,28 @@
 <style scoped>
   p{
     margin: 0;
-    padding: 5px;
     font-size: 20px;
     font-weight: bold;
   }
   span{
     display: block;
-    padding: 0 5px;
-    margin-bottom: 5px;
+    padding: 5px 0;
+    margin: 8px 0 0;
   }
   .city{
     display: flex;
-    min-width: 30%;
+    min-width: 340px;
     background: white;
-    padding: 20px;
-    margin: 10px 15px;
+    padding: 15px 14px 15px 30px;
+    margin: 0 auto 80px;
     flex-direction: column;
     border-radius: 25px;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
   }
   .name{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .about-wrap{
     display: flex;
@@ -70,17 +69,22 @@
     width: 50%;
     flex-direction: column;
     padding: 0 5px;
-    justify-content: center;
+    margin: 18px 0;
+    justify-content: flex-start;
     position: relative;
+  }
+  .square{
+    text-align: center;
   }
   .population::after{
     content: "";
     display: block;
     width: 1px;
-    height: 100%;
+    height: 90%;
     background: black;
     position: absolute;
-    right: 7%;
+    right: 0;
+    bottom: 1%;
   }
 
 </style>

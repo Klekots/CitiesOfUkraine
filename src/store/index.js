@@ -23,16 +23,17 @@ export default new Vuex.Store({
   },
   actions: {
     loadCities({commit}){
-      axios
-        .get('https://my-json-server.typicode.com/YegorShtonda/test-json/cities')
-        .then(data=>{
-          let cities = data.data;
-          console.log(data.data);
-          commit('SET_CITIES', cities);
-        })
-        .catch(error=>{
-          console.log(error);
-        })
+      setTimeout(()=>{
+        axios
+          .get('https://my-json-server.typicode.com/YegorShtonda/test-json/cities')
+          .then(data=>{
+            let cities = data.data;
+            commit('SET_CITIES', cities);
+          })
+          .catch(error=>{
+            console.log(error);
+          })
+      },1)
     }
   },
   mutations: {
