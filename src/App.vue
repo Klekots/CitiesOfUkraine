@@ -70,5 +70,13 @@ export default {
     flex-direction: column;
 
   }
+  @media only screen and (max-width: 1200px) {
+    .main-wrap{
+      width: 96%;
+    }
+    body{
+      background-size: 96%;
+    }
+  }
 </style>
 

@@ -61,4 +61,14 @@
     background: black;
     color: white;
   }
+
+  @media only screen and (max-width: 992px) {
+    ul{
+      flex-direction: column;
+    }
+    li{
+      flex-basis: 50px;
+      margin: 10px 0;
+    }
+  }
 </style>

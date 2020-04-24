@@ -87,4 +87,9 @@
     bottom: 1%;
   }
 
+  @media only screen and (max-width: 992px) {
+    .city{
+      margin-bottom: 20px;
+    }
+  }
 </style>
