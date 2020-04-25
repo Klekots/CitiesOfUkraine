@@ -37,7 +37,6 @@
 
 <style scoped>
   p{
-    margin: 0;
     font-size: 20px;
     font-weight: bold;
   }
@@ -84,7 +83,7 @@
     background: black;
     position: absolute;
     right: 0;
-    bottom: 1%;
+    bottom: -6px;
   }
 
   @media only screen and (max-width: 992px) {
